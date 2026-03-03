@@ -1,58 +1,35 @@
-const AI_DATABASE = [
+const HALL_OF_FAME = [
+    { name: "ChatGPT", domain: "chatgpt.com", link: "https://chatgpt.com", sub: "GPT-5.2 Elite" },
+    { name: "Gemini", domain: "gemini.google.com", link: "https://gemini.google.com", sub: "3.0 Pro (Research)" },
+    { name: "Claude", domain: "claude.ai", link: "https://claude.ai", sub: "4.5 Agentic Coding" },
+    { name: "Perplexity", domain: "perplexity.ai", link: "https://perplexity.ai", sub: "Search Engine" }
+];
+
+const CHINESE_LLMS = [
+    { name: "DeepSeek", domain: "deepseek.com", link: "https://deepseek.com", tag: "Coding King" },
+    { name: "Kimi", domain: "kimi.ai", link: "https://www.kimi.ai", tag: "Long Context" },
+    { name: "Qwen", domain: "qwenlm.ai", link: "https://chat.qwenlm.ai", tag: "Alibaba" }
+];
+
+const TOOL_WINNERS = [
     {
-        category: "Research & Deep Study",
-        paidName: "NotebookLM Pro",
-        paidLink: "https://notebooklm.google/",
-        freeName: "NotebookLM (Standard)",
-        freeLink: "https://notebooklm.google/",
-        tags: ["study", "research", "notes"]
+        category: "Web & App Development",
+        paid: { name: "Emergent Pro", domain: "emergent.sh", link: "https://emergent.sh", info: "Vibe Coding" },
+        free: { name: "Bolt.new", domain: "bolt.new", link: "https://bolt.new", info: "One-Click Deploy" }
     },
     {
-        category: "Image Generation",
-        paidName: "Nano Banana Pro",
-        paidLink: "https://gemini.google.com/",
-        freeName: "Ideogram 2.0",
-        freeLink: "https://ideogram.ai/",
-        tags: ["art", "design"]
+        category: "Research & Knowledge",
+        paid: { name: "NotebookLM", domain: "notebooklm.google", link: "https://notebooklm.google", info: "Audio Deep-Dive" },
+        free: { name: "Humata AI", domain: "humata.ai", link: "https://humata.ai", info: "PDF Expert" }
     },
     {
-        category: "PowerPoint & Slides",
-        paidName: "Beautiful.ai",
-        paidLink: "https://www.beautiful.ai/",
-        freeName: "Gamma AI",
-        freeLink: "https://gamma.app/",
-        tags: ["presentation", "decks"]
-    },
-    {
-        category: "Resume & Career",
-        paidName: "Kickresume",
-        paidLink: "https://www.kickresume.com/",
-        freeName: "Teal HQ",
-        freeLink: "https://www.tealhq.com/",
-        tags: ["jobs", "cv"]
+        category: "PowerPoint & Presentations",
+        paid: { name: "GenPPT", domain: "genppt.com", link: "https://genppt.com", info: "Deep Research" },
+        free: { name: "Gamma AI", domain: "gamma.app", link: "https://gamma.app", info: "Modern Decks" }
     },
     {
         category: "Audio & Voiceover",
-        paidName: "ElevenLabs",
-        paidLink: "https://elevenlabs.io/",
-        freeName: "TTSMaker",
-        freeLink: "https://ttsmaker.com/",
-        tags: ["speech", "audio"]
-    },
-    {
-        category: "Coding & Python",
-        paidName: "Cursor IDE",
-        paidLink: "https://cursor.sh/",
-        freeName: "Codeium",
-        freeLink: "https://codeium.com/",
-        tags: ["programming", "dev"]
-    },
-    {
-        category: "Main LLM (Chat)",
-        paidName: "Claude 3.5 Pro",
-        paidLink: "https://claude.ai/",
-        freeName: "Gemini 3 Flash",
-        freeLink: "https://gemini.google.com/",
-        tags: ["chat", "logic"]
+        paid: { name: "ElevenLabs", domain: "elevenlabs.io", link: "https://elevenlabs.io", info: "Emotional Realism" },
+        free: { name: "TTSMaker", domain: "ttsmaker.com", link: "https://ttsmaker.com", info: "Unlimited Text" }
     }
 ];
